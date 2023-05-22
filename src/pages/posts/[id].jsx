@@ -1,5 +1,5 @@
 import React from "react";
-
+import axios from "axios";
 const posts = [
         {
             _id: 1,
@@ -51,20 +51,19 @@ const posts = [
              published: true,
         }
     ]
-export default function Post({post,params}){
+export default function Post({post}){
 
     return(
         <div>
             {post.title}
-            {params}
+            
         </div>
     )
 
 }
 
 export async function getStaticPaths(){
-
-          
+       
     const paths = posts.map(post=>`/posts/${post._id}`);
     return {paths, fallback: false};
 }

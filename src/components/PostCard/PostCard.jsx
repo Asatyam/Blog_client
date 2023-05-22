@@ -3,11 +3,12 @@ import styles from "./PostCard.module.css"
 
 export default function PostCard({post}){
 
+    
     return(
        
         <div className={styles['post-card']}>
             <div className={styles.author}>
-                {post.author}
+                {post.author?post.author.username:"Anonymous"}
             </div>
             <div className={styles.title}>
                 <a href={`/posts/${post._id}`}>
