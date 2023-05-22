@@ -8,11 +8,7 @@ export default function Header(){
         <div className={styles.heading}>
             <div className={styles['heading-text']}>
                 <h1>Blog API</h1>
-            </div>
-            <nav>
-                <Link href='/posts'>Posts</Link>
-            </nav>
-            
+            </div>          
         </div>
     )
 }
