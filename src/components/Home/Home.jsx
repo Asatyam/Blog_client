@@ -11,7 +11,7 @@ export default function Home(){
             title: "Test title 1",
              author: "Test user 1",
             content: "Test content 1",
-            date: (new Date()).toLocaleString(),
+            date: "22 May 2023",
              published: true,
         },
          {
@@ -19,7 +19,7 @@ export default function Home(){
             title: "Test title 2",
              author: "Test user 2",
             content: "Test content 2",
-            date: (new Date()).toLocaleString(),
+            date: "22 May 2023",
              published: true,
         }
         ,
@@ -28,7 +28,7 @@ export default function Home(){
             title: "Test title 3",
              author: "Test user 3",
             content: "Test content 3",
-            date: (new Date()).toLocaleString(),
+           date: "22 May 2023",
              published: true,
         },
          {
@@ -36,7 +36,7 @@ export default function Home(){
             title: "Test title 4",
              author: "Test user 4",
             content: "Test content 4",
-            date: (new Date()).toLocaleString(),
+            date: "22 May 2023",
              published: true,
         },
          {
@@ -44,7 +44,7 @@ export default function Home(){
             title: "Test title 5",
              author: "Test user 5",
             content: "Test content 5",
-            date: (new Date()).toLocaleString(),
+            date: "22 May 2023",
              published: true,
         },
          {
@@ -52,7 +52,7 @@ export default function Home(){
             title: "Test title 6",
              author: "Test user 6",
             content: "Test content 6",
-            date: (new Date()).toLocaleString(),
+            date: "22 May 2023",
              published: true,
         }
     ]
