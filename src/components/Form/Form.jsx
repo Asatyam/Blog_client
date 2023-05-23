@@ -5,7 +5,7 @@ export default function Form({id}){
 
     const handleSubmit = (e)=>{
         e.preventDefault();
-        axios.post(`http://localhost:4000/api/posts/${id}/comments`,{username: userName, content: content})
+        axios.post(`https://blogapi-asatyam.onrender.com/api/posts/${id}/comments`,{username: userName, content: content})
         .then(res=>{
             console.log(res);
             console.log(res.data);

@@ -12,7 +12,7 @@ export default function Post({post}){
 
 export async function getStaticPaths(){
 
-    let res = await axios.get("http://localhost:4000/api/posts");
+    let res = await axios.get("https://blogapi-asatyam.onrender.com/api/posts");
     const posts = res.data;
        
     const paths = posts.map(post=>`/posts/${post._id}`);
@@ -20,7 +20,7 @@ export async function getStaticPaths(){
 }
 export async function getStaticProps({params}){
 
-    const res  = await axios.get(`http://localhost:4000/api/posts/${params.id}`);
+    const res  = await axios.get(`https://blogapi-asatyam.onrender.com/api/posts/${params.id}`);
     const post = res.data.post;
     return {
         props: {params,post},
