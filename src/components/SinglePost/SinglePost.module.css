@@ -1,1 +1,25 @@
 
+.container{
+    padding: 50px 100px;
+}
+
+.heading{
+    background-color: lightsteelblue;
+    padding: 20px;
+    margin: 20px;
+}
+.author{
+    text-align: end;
+}
+.content{
+    padding: 20px 100px;
+    font-size: 1.3rem;
+    font-family: "Helvetica",sans-serif;
+    line-height: 30px;
+    text-align: start;
+}
+@media(max-width:1000px){
+    .content,.container{
+        padding: 10px 50px;
+    }
+}

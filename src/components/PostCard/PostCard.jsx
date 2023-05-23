@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./PostCard.module.css"
-
+import Link from "next/link";
 export default function PostCard({post}){
 
     
@@ -11,9 +11,9 @@ export default function PostCard({post}){
                 {post.author?post.author.username:"Anonymous"}
             </div>
             <div className={styles.title}>
-                <a href={`/posts/${post._id}`}>
+                <Link href={`/posts/${post._id}`} scroll={false}>
                         {post.title}
-                </a>
+                </Link>
             </div>
             <div className={styles.date}>
                 {post.date}

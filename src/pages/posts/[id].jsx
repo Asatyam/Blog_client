@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import SinglePost from "@/components/SinglePost/SinglePost";
 
 export default function Post({post}){
 
     return(
-        <div>
-            {post.title}
-            
-        </div>
+       <SinglePost post={post}/>
     )
 
 }
@@ -24,7 +22,6 @@ export async function getStaticProps({params}){
 
     const res  = await axios.get(`http://localhost:4000/api/posts/${params.id}`);
     const post = res.data.post;
-    console.log(post);
     return {
         props: {params,post},
     };
