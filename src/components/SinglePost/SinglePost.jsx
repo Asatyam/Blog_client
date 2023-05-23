@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SinglePost.module.css"
 import Comments from "../Comments/Comments";
+import Form from "../Form/Form";
 export default function SinglePost({post}){
 
     return (
@@ -17,6 +18,7 @@ export default function SinglePost({post}){
                     {post.content}
                     
             </div>
+            <Form id={post._id}/>
             <div className={styles.comments}>
                     <Comments id = {post._id}/>
             </div>
