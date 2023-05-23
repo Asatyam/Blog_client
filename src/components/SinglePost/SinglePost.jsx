@@ -20,6 +20,7 @@ export default function SinglePost({post}){
             </div>
             <Form id={post._id}/>
             <div className={styles.comments}>
+                    <h3>Comments</h3>
                     <Comments id = {post._id}/>
             </div>
             

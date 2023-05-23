@@ -12,6 +12,8 @@ export default function Form({id}){
         }).catch(err=>{
             console.log(err);
         })
+        setUsername('');
+        setContent('');
     }
 
     const [userName, setUsername] = useState("");
