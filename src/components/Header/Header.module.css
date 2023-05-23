@@ -3,9 +3,8 @@
     background-color: #f8fafc;
     justify-content: space-between;
     padding: 0px ;
-    box-shadow: 2px 0px 20px  10px black;
+    box-shadow: 2px 0px 10px  3px black;
     align-items: center;
-    z-index: 100;
 } 
 .heading-text{
     font-size:1.5rem;
