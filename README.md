@@ -1,3 +1,10 @@
+This website serves as the front end of the blogging website which is made of three parts. The other two parts are
+- Server
+- CMS
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
