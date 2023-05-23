@@ -30,6 +30,9 @@
 
 @media(max-width:1000px){
     .content,.container{
-        padding: 10px 50px;
+        padding: 10px 10px;
+    }
+    .content{
+        margin: 10px;
     }
 }

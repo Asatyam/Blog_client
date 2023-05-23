@@ -23,7 +23,7 @@ export default function Comments({id}){
         )
     }
     return (
-        <div className="comments">
+        <div className={styles.comments}>
 
             {comments.map((comment)=> <SingleComment key= {comment._id} comment={comment}/>)}
         </div>
