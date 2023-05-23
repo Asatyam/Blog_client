@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import SingleComment from "../SingleComment/SingleComment";
+import SingleComment from "../SingleComment/SingleComment.jsx";
 import styles from "./Comments.module.css"
 import axios from "axios";
 
@@ -13,7 +13,7 @@ export default function Comments({id}){
             setComments(res.data);
         })
         .catch(err=>setComments(null))
-    },[id]);
+    },[id,comments]);
 
     if(comments === null){
         return (

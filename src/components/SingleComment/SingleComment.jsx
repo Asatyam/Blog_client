@@ -11,7 +11,7 @@ export default function SingleComment({comment}){
     return(
         
         <div className={styles['comment-card']}>
-            <p>{comment.author.username}</p>
+            <p>{comment.author}</p>
             <p>{comment.content}</p>
             <p>{new Date(comment.date).toDateString()}</p>
         </div> 
